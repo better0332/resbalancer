@@ -2,11 +2,11 @@ package main
 
 import (
 	"flag"
-	"resbalancer/balancer"
-	"resbalancer/clientset"
-	"resbalancer/signal"
 	"time"
 
+	"github.com/better0332/resbalancer/balancer"
+	"github.com/better0332/resbalancer/clientset"
+	"github.com/better0332/resbalancer/signal"
 	"github.com/spf13/cobra"
 	"k8s.io/klog"
 )
