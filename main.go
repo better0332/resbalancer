@@ -46,7 +46,7 @@ func init() {
 	rootCmd.PersistentFlags().AddGoFlagSet(flag.CommandLine)
 	rootCmd.PersistentFlags().StringVarP(&kubeconfig, "kubeconfig", "c", "", "Kube config path. Only required if out-of-cluster.")
 	rootCmd.Flags().DurationVarP(&recyclePeriod, "recycle_period", "p", 2*time.Minute, "Recycle period.")
-	rootCmd.Flags().Float64VarP(&ratio, "ratio", "r", 2, "sensitivity ratio [1,n]")
+	rootCmd.Flags().Float64VarP(&ratio, "ratio", "r", 2.5, "sensitivity ratio [1,n]")
 }
 
 func main() {
